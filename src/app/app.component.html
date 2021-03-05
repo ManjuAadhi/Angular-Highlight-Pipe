@@ -1,0 +1,19 @@
+<hello name="{{ name }}"></hello>
+<div *ngIf="check">
+	<p appHighlight>
+		Start editing to see some magic happen :)
+	</p>
+	{{numArray |add}}
+</div>
+<ul>
+	<li *ngFor="let a of numArray ">{{a}}</li>
+</ul>
+{{test}}<br>
+<!--- CHANGE,INPUT,CLICK EVENTS<input type='text' [value]="test" (input) = 
+"display1($event)"/>
+<br>
+<button (click)="display()">clickme</button>
+<input type='text' [value]="test" (change) = 
+"display1($event)"/>-->
+
+<!---<input type='text' [value]="test" [(ngModel)] ="test"/>2way--->
